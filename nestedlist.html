@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nested Lists </title>
+</head>
+<style>
+    ol.alpha {
+        list-style-type:upper-alpha;
+        margin:0;
+        padding-left:28px;
+  }
+  ol.roman {
+    list-style-type:upper-roman;
+    margin:0;
+    padding-left:34px;
+  }
+</style>
+<body>
+    
+     <a href="index.html">Go Back to main page </a>
+
+    <ol class="alpha">
+      <li>sample</li>
+      <li>sample</li>
+      <li>
+        sample
+        <!-- nested roman list -->
+        <ol class="roman">
+          <li>sample</li>
+          <li>sample</li>
+          <li>
+            sample
+            <!-- nested small circle bullets -->
+            <ul class="small-circle">
+              <li>sample</li>
+              <li>sample</li>
+              <li>sample</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ol>
+
+    <!-- next block decimal numbered list -->
+    <ol class="decimal">
+      <li>sample</li>
+      <li>sample</li>
+      <li>
+        sample
+        <!-- nested filled bullets under the decimal item -->
+        <ul class="filled">
+          <li>sample</li>
+          <li>sample</li>
+          <li>sample</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</body>
+</html>

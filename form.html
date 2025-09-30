@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], select {
+            padding: 5px;
+            margin: 5px;
+        }
+        input[type="submit"] {
+            padding: 5px 15px;
+            margin-top: 10px;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fill the form...</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Full Name"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Mail Id"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Your Password"><br><br>
+
+        <b>Gender:</b><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <b>Select any Language:</b><br>
+        <input type="checkbox" id="english" name="language" value="english">
+        <label for="english">English</label>
+        <input type="checkbox" id="spanish" name="language" value="spanish">
+        <label for="spanish">Spanish</label>
+        <input type="checkbox" id="arabic" name="language" value="arabic">
+        <label for="arabic">Arabic</label><br><br>
+
+        <b>Select the subject:</b><br>
+        <select name="subject">
+            <option value="default">Default</option>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <a href="index.html">Back to Main Page</a>
+</body>
+</html>
